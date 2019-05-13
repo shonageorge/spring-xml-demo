@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="movie" class="com.stackroute.spring.bean.Movie" scope="prototype">
+        <property name="movieName" value="Queen"/>
+        <property name="genre" value="Romantic"/>
+        <property name="actor" ref="actor"/>
+    </bean>
+
+    <bean id="actor" class="com.stackroute.spring.bean.Actor" scope="prototype">
+        <property name="actorName" value="Kangana"/>
+        <property name="actorAge" value="25"/>
+        <property name="actorGender" value="Female"/>
+    </bean>
+
+</beans>
