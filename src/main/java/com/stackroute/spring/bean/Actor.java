@@ -5,34 +5,34 @@ public class Actor {
     int actorAge;
     String actorGender;
 
+
+
     public Actor(){}
+
+    public Actor(String actorName, int actorAge, String actorGender) {
+        this.actorName = actorName;
+        this.actorAge = actorAge;
+        this.actorGender = actorGender;
+    }
 
     public String getActorName() {
         return actorName;
-    }
-
-    public void setActorName(String actorName) {
-        this.actorName = actorName;
     }
 
     public int getActorAge() {
         return actorAge;
     }
 
-    public void setActorAge(int actorAge) {
-        this.actorAge = actorAge;
-    }
-
     public String getActorGender() {
         return actorGender;
     }
 
-    public void setActorGender(String actorGender) {
-        this.actorGender = actorGender;
-    }
-
     @Override
     public String toString() {
-        return "Actor{" +", actorAge="+ actorName + '\'' + ", actorAge=" + actorAge + ", actorGender='" + actorGender + '\'' + '}';
+        return "{" +
+                "actorName='" + actorName + '\'' +
+                ", actorAge=" + actorAge +
+                ", actorGender='" + actorGender + '\'' +
+                '}';
     }
 }
