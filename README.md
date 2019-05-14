@@ -1,6 +1,6 @@
 Spring Fundamentals with XML Configurations
 
-<<<<<<< HEAD
+
 Task 2: From the master branch of spring-xml-demo repo create a constructor-injectionbranch.
 Add constructor to the Actor class to initialize with name and gender, and ageCreate three beans of type Actor in the bean definition file.  
 
@@ -26,4 +26,5 @@ Use property based object injection in the bean definition file (beans.xml) The 
 1.Using XmlBeanFactory
 2.Using Spring 3.2 BeanDefinitionRegistry and BeanDefinitionReader
 3.Using ApplicationContextCreate a spring-xml-demo repo and push the code to master branch.
->>>>>>> b9560743b0f48a03f6e30075324332e498232336
+
+
